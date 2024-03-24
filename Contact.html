@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            background: rgba(243, 243, 243, 0.938);
+            font-family: 'Poppins', sans-serif;
+        }
+        .logo{
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(0 0 10px white);
+            padding-left: 70px;
+        }
+        .logout img{
+            width: 20px;
+            height: 20px;
+            padding-left: 30px;
+        }
+        .navbar{
+            margin-top: 10px;
+        }
+        .nav-link{
+            color:rgb(58, 9, 9);
+            text-decoration: none;
+        }
+        .nav-link:hover{
+            color: rgb(0, 4, 255);
+            text-decoration: underline;
+        }
+        .nav-item{
+            color: white;
+            margin-left: 35px;
+        }
+        .navbar-nav{
+            display: flex;
+            flex-direction: row;
+            padding-left: 850px;
+            margin-top: -45px;
+            list-style: none;
+        }
+        .title-text{
+            text-align: center;
+            margin-top: 50px;
+            text-decoration: underline;
+        }
+        .p-text{
+            text-align: center;
+            font-size: 15px;
+        }
+        #footer{
+            padding: 100px 0 20px;
+            background: #dddddd;
+            position: relative;
+        }
+        .footer-row{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-left, .footer-right{
+            flex-basis: 45%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .footer-right{
+            text-align: right;
+        }
+        .footer-row h1{
+            margin: 10px 0;
+        }
+        .footer-row p{
+            line-height: 25px;
+        }
+        .footer-left .fa, .footer-right .fa{
+            font-size: 20px;
+            color: #009688;
+            margin: 10px;
+        }
+        .footer-img{
+            max-width: 370px;
+            opacity: 0.3;
+            position: absolute;
+            left: 50%;
+            top: 19%;
+            transform: translate(-50%,-50%);
+        }
+        .social-links{
+            text-align: center;
+        }
+        .social-links .fa{
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+            line-height: 40px;
+            border: 1px solid #009688;
+            margin: 40px 5px 0;
+            color: #009688;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .social-links .fa:hover{
+            background: #009688;
+            color: #fff;
+            transform: translateY(-7px);
+        }
+        .social-links p{
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">
+            <div class="log">
+              <img src="blacklogo.png" class="logo">
+            </div>
+          </a>
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+              <div class="logout" id="logout-button">
+                <img src="logout.png" alt="">
+              </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="footer">
+        <img src="contact.png" class="footer-img" alt="">
+        <div class="title-text">
+            <h1>CONTACT US</h1>
+        </div>
+        <div class="p-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sequi.</p>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 8am to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>#30 abc Colony, xyz City In<i class="fa fa-map-marker"></i></p>
+                <p>myusi@website.com<i class="fa fa-paper-plane"></i></p>
+                <p>+01 6541237890<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube-play"></i>
+            <p>Copyright UC</p>
+        </div>
+    </section>
+</body>
+</html>

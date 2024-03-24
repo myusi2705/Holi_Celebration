@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            font-weight: 400;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        .logo{
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(0 0 10px white);
+            padding-left: 70px;
+        }
+        .logout img{
+            width: 20px;
+            height: 20px;
+            padding-left: 30px;
+        }
+        .navbar{
+            margin-top: 10px;
+        }
+        .nav-link{
+            color:rgb(58, 9, 9);
+            text-decoration: none;
+        }
+        .nav-link:hover{
+            color: rgb(0, 4, 255);
+            text-decoration: underline;
+        }
+        .nav-item{
+            color: white;
+            margin-left: 35px;
+        }
+        .navbar-nav{
+            display: flex;
+            flex-direction: row;
+            padding-left: 850px;
+            margin-top: -45px;
+            list-style: none;
+        }
+        .container{
+            background-color: #fafafa;
+            margin: 100px;
+            box-shadow: 10px 15px 20px rgba(0,0,0,.1);
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+        .container-time{
+            background-color: rgba(0,0,0,.95);
+            padding: 50px;
+            outline: 3px dashed #ffd900;
+            outline-offset: -30px;
+            text-align: center;
+        }
+        .heading{
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        .heading-days{
+            color: #ffd900;
+            font-size: 30px;
+        }
+        .heading-phone{
+            font-size: 20px;
+        }
+        .container-form{
+            padding: 20px 0;
+            margin: 0 auto;
+            color: #000;
+        }
+        form{
+            display: grid;
+            grid-row-gap: 20px;
+        }
+        form p{
+            font-weight: 600;
+        }
+        .form-field{
+            display: flex;
+            justify-content: space-between;
+        }
+        input,select{
+            pad: 10px 5px;
+        }
+        .btn{
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container1">
+          <a class="navbar-brand text-white" href="#">
+            <div class="log">
+              <img src="blacklogo.png" class="logo">
+            </div>
+            
+          </a>
+          
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              
+              
+              <div class="logout" id="logout-button">
+                <img src="logout.png" alt="">
+            </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="container-time">
+            <h2 class="heading">Time Open</h2>
+            <h3 class="heading-days">25 March,2024</h3>
+            <p>Slot 1: 9am - 11am (Color Holi)</p>
+            <p>Slot 2: 11am - 1pm (Flower Holi)</p>
+            <p>Slot 3: 1pm - 3pm (Water Holi)</p>
+            <p>Slot 4: 3pm - 5pm (Tomato Holi)</p>
+            <p>Slot 5: 5pm - 7pm (Balloon Holi)</p>
+            <p>Slot 6: 7pm - 9pm (Gulal Holi)</p>
+
+            <h3 class="heading-days">Facilities</h3>
+            <p>Holi Celebration with light music</p>
+            <p>Sweet, Thandai & Snacks</p>
+            <hr>
+            <h4 class="heading-phone">Call Us: +01 6541237890</h4>
+        </div>
+        <div class="container-form">
+            <form action="#">
+                <h2 class="heading heading-yellow">Reservation Online</h2>
+                <div class="form-field">
+                    <p>Your Name :</p>
+                    <input type="text" placeholder="your name">
+                </div>
+                <div class="form-field">
+                    <p>Your Email :</p>
+                    <input type="text" placeholder="your email">
+                </div>
+                <div class="form-field">
+                    <p>Contact No. :</p>
+                    <input type="text" placeholder="+01 6541237890">
+                </div>
+                <div class="form-field">
+                    <p>Time :</p>
+                    <input type="text" placeholder="eg. 9am-11am">
+                </div>
+                <div class="form-field">
+                    <p>How many people? :</p>
+                    <select name="select" id="#">
+                        <option value="1">1 person</option>
+                        <option value="2">2 persons</option>
+                        <option value="3">3 persons</option>
+                        <option value="4">4 persons</option>
+                        <option value="5">5 persons</option>
+                        <option value="6">6 persons</option>
+                        <option value="6+">6+ persons</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <p>Chose Slot :</p>
+                    <select name="select" id="#">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

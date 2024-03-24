@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES Page</title>
+
+    <style>
+
+        body{
+            background: rgba(243, 243, 243, 0.938);
+            font-family: 'Poppins', sans-serif;
+        }
+        .logo{
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(0 0 10px white);
+            padding-left: 70px;
+            
+        }
+        .logout img{
+            width: 20px;
+            height: 20px;
+            padding-left: 30px;
+            
+        }
+        .navbar{
+            margin-top: 10px;
+        }
+        .nav-link{
+            color:rgb(58, 9, 9);
+            text-decoration: none;
+        }
+        .nav-link:hover{
+            color: rgb(0, 4, 255);
+            text-decoration: underline;
+        }
+        .nav-item{
+            color: white;
+            margin-left: 35px;
+        }
+
+        .navbar-nav{
+            display: flex;
+            flex-direction: row;
+            padding-left: 850px;
+            margin-top: -45px;
+            list-style: none;
+        }
+        .title-text{
+            text-align: center;
+            margin-top: 60px;
+            text-decoration: underline;
+        }
+        .p-text{
+            text-align: center;
+        }
+
+        .single-service{
+            flex-basis: 48%;
+            text-align: center;
+            border-radius: 7px;
+            margin-bottom: 20px;
+            color: #fff;
+            position: relative;
+        }
+        .single-service img{
+            width: 100%;
+            border-radius: 7px;
+        }
+        .service-box{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .overlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            border-radius: 7px;
+            cursor: pointer;
+            background: linear-gradient(rgba(0,0,0,0.5),#0c0c0c);
+            opacity: 0;
+            transition: 1s;
+        }
+        .single-service:hover .overlay{
+            opacity: 1;
+        }
+        .service-desc{
+            width: 80%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: 1s;
+        }
+        hr{
+            background: #fff;
+            height: 2px;
+            border: 0;
+            margin: 15px auto;
+            width: 60%;
+        }
+        .service-desc p{
+            font-size: 14px;
+        }
+        .single-service:hover .service-desc{
+            bottom: 40%;
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">
+            <div class="log">
+              <img src="blacklogo.png" class="logo">
+            </div>
+            
+          </a>
+          
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              
+              
+              <div class="logout" id="logout-button">
+                <img src="logout.png" alt="">
+              </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="footer">
+    <div class="title-text">
+        <h2>SERVICES</h2>
+    </div>
+    <div class="p-text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus tenetur quae atque!</p>
+    </div>
+
+    <div class="service-box">
+        <div class="single-service">
+            <img src="1color.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Color Holi</h3>
+                <hr>
+                <p>this is test under description of Holi day celebration booking website.</p>
+                <h3>₹300/-</h3>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="2pool.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Water Holi</h3>
+                <hr>
+                <p>this is test under description of Holi day celebration booking website.</p>
+                <h3>₹400/-</h3>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="3flower.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Flower Holi</h3>
+                <hr>
+                <p>this is test under description of Holi day celebration booking website.</p>
+                <h3>₹400/-</h3>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="4ballon.jpeg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Balloon Holi</h3>
+                <hr>
+                <p>this is test under description of Holi day celebration booking website.</p>
+                <h3>₹300/-</h3>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="5tometo.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Tomato Holi</h3>
+                <hr>
+                <p>this is test under description of Holi day celebration booking website.</p>
+                <h3>₹400/-</h3>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="6gulal.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Gulal Holi</h3>
+                <hr>
+                <p>this is test under description of Holi day celebration booking website.</p>
+                <h3>₹300/-</h3>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
